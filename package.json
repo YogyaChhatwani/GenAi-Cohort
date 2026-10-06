@@ -13,7 +13,16 @@
     "@anthropic-ai/sdk": "^0.110.0",
     "@google/genai": "^2.10.0",
     "@inquirer/prompts": "^7.10.1",
+    "@langchain/community": "^1.1.29",
+    "@langchain/core": "^1.2.3",
+    "@langchain/openai": "^1.5.5",
+    "@langchain/qdrant": "^1.0.3",
+    "@langchain/textsplitters": "^1.0.1",
+    "@typesafe-ai/sdk": "^0.6.0",
+    "ai": "^7.0.114",
     "dotenv": "^17.4.2",
-    "openai": "^6.45.0"
+    "langchain": "^1.5.3",
+    "openai": "^6.48.0",
+    "pdf-parse": "^2.4.5"
   }
 }
