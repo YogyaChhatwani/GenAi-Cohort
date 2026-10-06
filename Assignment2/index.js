@@ -94,16 +94,16 @@ async function synthesizeFinalOutput(openAIResponse, geminiResponse, claudeRespo
     `;
     const timeElapsed = performance.now();
     try {
-    const judgeResponse = await claudeClient.messages.create({
-        model: "claude-sonnet-5",
-        max_tokens: 1000,
-        messages: [
-            {
-                role: "user",
-                content: JUDGE_PROMPT,
-            },
-        ],
-    });
+        const judgeResponse = await claudeClient.messages.create({
+            model: "claude-sonnet-5",
+            max_tokens: 1000,
+            messages: [
+                {
+                    role: "user",
+                    content: JUDGE_PROMPT,
+                },
+            ],
+        });
         const timeTaken = performance.now() - timeElapsed;
         console.log("Time taken:", timeTaken, "milliseconds");
         const textBlock = judgeResponse.content.find((block) => block.type === "text");
